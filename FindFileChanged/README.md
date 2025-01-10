@@ -7,13 +7,13 @@
 一开始，我想这存储程序运行之前的文件的快照，然后对比，但这样的开销是巨大的。
 ## 2. 
 然后，我想这通过遍历来查看文件以及文件夹被打开的时间（利用windows的Last Access Time功能），于是有了“RecentlyOpenedFile.cs”。在写代码的时候我遇见了一个问题：当我用函数遍历文件夹里文件时候，几百年是没有打开这个文件，文件的Last Access Time依然会被更改。
-
+//
   DirectoryInfo dirInfo = new DirectoryInfo(directoryPath);
   dirInfo.LastAccessTime  // 不会触发更新
 
   FileInfo fileInfo = new FileInfo(filePath);
   fileInfo.LastAccessTime  // 不会触发更新
-
+//
   Directory.GetLastAccessTime()//会触发目录的访问时间更新
   File.GetLastAccessTime()//会触发目录的访问时间更新
   FileInfo.GetLastAccessTime()//会触发目录的访问时间更新
