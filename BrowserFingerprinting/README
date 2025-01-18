@@ -1,0 +1,15 @@
+[什么是tls指纹](https://www.bright.cn/blog/web-data/tls-fingerprinting)
+
+
+### 常见工具
+1. Browser Extensions:
+   - Chameleon: 浏览器扩展，支持修改浏览器指纹。
+   - Random User-Agent: 自动切换用户代理。
+   - Fingerprint Spoofer :是一款用于修改或伪装设备指纹的工具，主要用于保护隐私或绕过基于设备指纹的追踪和限制。设备指纹是通过收集设备的硬件、软件和网络信息（如浏览器版本、操作系统、屏幕分辨率、字体等）生成的唯一标识符，常用于广告追踪、反欺诈和访问控制。
+2. Desktop Applications:
+   - Multilogin: 支持创建多个独立浏览器环境，每个环境有唯一指纹。
+   - Kameleo: 提供虚拟浏览器环境，支持修改指纹。
+
+3. Mobile Applications:
+   - Xposed Framework: Android框架，支持通过模块修改设备信息。
+   - Device ID Changer: 修改Android设备的IMEI、MAC地址等信息。
